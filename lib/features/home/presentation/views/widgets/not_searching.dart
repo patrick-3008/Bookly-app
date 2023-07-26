@@ -1,12 +1,11 @@
-import 'package:bookly_app/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../../core/utils/styles.dart';
 import 'best_seller_list_view.dart';
-import 'custom_appbar.dart';
 import 'featured_list_view.dart';
 
-class HomeViewBody extends StatelessWidget {
-  const HomeViewBody({super.key});
+class NotSearching extends StatelessWidget {
+  const NotSearching({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,10 +16,7 @@ class HomeViewBody extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 30),
-                child: CustomAppBar(),
-              ),
+              SizedBox(height: 20),
               FeaturedBooksListView(),
               SizedBox(height: 50),
               Padding(

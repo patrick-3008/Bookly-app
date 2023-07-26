@@ -15,7 +15,7 @@ class CustomBookImage extends StatelessWidget {
         child: CachedNetworkImage(
           fit: BoxFit.fill,
           imageUrl: imageUrl == ''
-              ? 'https://cdn.pixabay.com/photo/2021/10/11/00/59/warning-6699085__340.png'
+              ? 'http://books.google.com/books/content?id=8QFwvgAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api'
               : imageUrl,
           errorWidget: (context, url, error) => const Icon(Icons.error),
         ),

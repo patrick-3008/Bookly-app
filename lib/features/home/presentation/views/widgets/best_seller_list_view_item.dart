@@ -40,9 +40,11 @@ class BookListViewItem extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 3),
-                  Text(
-                    bookModel.volumeInfo.authors![0],
-                    style: Styles.textStyle14,
+                  Expanded(
+                    child: Text(
+                      bookModel.volumeInfo.authors?[0] ?? 'Name of author',
+                      style: Styles.textStyle14,
+                    ),
                   ),
                   const SizedBox(height: 3),
                   Row(
@@ -59,6 +61,7 @@ class BookListViewItem extends StatelessWidget {
                       ),
                     ],
                   ),
+                  const Spacer(),
                 ],
               ),
             ),
