@@ -1,6 +1,6 @@
 # bookly_app
 
-A new Flutter project.
+A flutter application which fetch some books from the internet about computer science, which use bloc (cubit) pattern and clean code.
 
 ## Getting Started
 
