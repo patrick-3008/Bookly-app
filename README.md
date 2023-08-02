@@ -2,6 +2,8 @@
 
 A flutter application which fetch some books from the internet about computer science, which use bloc (cubit) pattern and clean code.
 
+Project in linkedin: https://www.linkedin.com/posts/patrick-nashaat-0474ba24a_flutterdeveloper-github-ios-activity-7090314784008470528-nqUi?utm_source=share&utm_medium=member_desktop
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
