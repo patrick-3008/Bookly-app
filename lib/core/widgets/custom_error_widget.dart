@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 
 class CustomErrorWidget extends StatelessWidget {
   const CustomErrorWidget({
-    Key? key,
+    super.key,
     required this.errMessage,
-  }) : super(key: key);
+  });
 
   final String errMessage;
 

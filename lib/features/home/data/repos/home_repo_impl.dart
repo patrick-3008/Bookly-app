@@ -24,7 +24,7 @@ class HomeRepoImpl implements HomeRepo {
 
       return right(books);
     } catch (e) {
-      if (e is DioError) {
+      if (e is DioException) {
         return left(ServerFailure.fromDioError(e));
       }
       return left(ServerFailure(e.toString()));
@@ -44,7 +44,7 @@ class HomeRepoImpl implements HomeRepo {
 
       return right(books);
     } catch (e) {
-      if (e is DioError) {
+      if (e is DioException) {
         return left(ServerFailure.fromDioError(e));
       }
       return left(ServerFailure(e.toString()));
@@ -66,7 +66,7 @@ class HomeRepoImpl implements HomeRepo {
 
       return right(books);
     } catch (e) {
-      if (e is DioError) {
+      if (e is DioException) {
         return left(ServerFailure.fromDioError(e));
       }
       return left(ServerFailure(e.toString()));
@@ -75,7 +75,7 @@ class HomeRepoImpl implements HomeRepo {
 
   @override
   Future<Either<Failure, List<BookModel>>> fetchSearchedBooks(
-      {required String search}) async{
+      {required String search}) async {
     try {
       var data = await apiService.get(
           endPoint:
@@ -88,7 +88,7 @@ class HomeRepoImpl implements HomeRepo {
 
       return right(books);
     } catch (e) {
-      if (e is DioError) {
+      if (e is DioException) {
         return left(ServerFailure.fromDioError(e));
       }
       return left(ServerFailure(e.toString()));
